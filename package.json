@@ -1,0 +1,36 @@
+{
+  "name": "nodebird",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "NODE_ENV=production PORT=80 pm2 start server.js -i 0",
+    "dev": "nodemon server",
+    "kill": "pm2 kill"
+  },
+  "author": "jaehyeon",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "express-session": "^1.17.2",
+    "helmet": "^5.0.2",
+    "hpp": "^0.2.3",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.4",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "nunjucks": "^3.2.3",
+    "passport": "^0.5.2",
+    "passport-kakao": "^1.0.1",
+    "passport-local": "^1.0.0",
+    "pm2": "^5.2.0",
+    "sequelize": "^6.15.0",
+    "sequelize-cli": "^6.4.1"
+  }
+}
